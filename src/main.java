@@ -10,6 +10,7 @@
  */
 
 //Own Classes
+import util.Coordinate;
 
 //Downloaded Classes
 
@@ -20,6 +21,14 @@ public class main {
   public static void main(String[] args) {
     // TODO Auto-generated method stub
     System.out.println("Starting Program");
+    
+    Coordinate [] point_array = new Coordinate[2];
+    
+    point_array[0] = new Coordinate(0, 0);
+    point_array[1] = new Coordinate(3, 4);
+    
+    
+    System.out.println(Coordinate.distance(point_array[0], point_array[1]));
     
   }
 
